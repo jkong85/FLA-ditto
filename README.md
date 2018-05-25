@@ -3,7 +3,7 @@
 </a>
 
 # Modification by Jian
-
+* Create a hello world microservice
 
 # Eclipse Ditto
 
