@@ -1,0 +1,51 @@
+➜  docker git:(v1) ✗ sudo docker images
+REPOSITORY                     TAG                                IMAGE ID            CREATED             SIZE
+ditto-policies                 0.1.0                              e2129449888f        4 minutes ago       249MB
+swagger-ui                     v2.2.9                             9cbd42e8b684        4 minutes ago       10.9MB
+ditto-things                   0.1.0                              2e547f9fadfa        5 minutes ago       249MB
+ditto-things-search            0.1.0                              82ddd5109622        5 minutes ago       252MB
+ditto-concierge                0.1.0                              63387a180e61        5 minutes ago       250MB
+ditto-connectivity             0.1.0                              94cec4378598        5 minutes ago       256MB
+ditto-gateway                  0.1.0                              509982ad3e3c        6 minutes ago       252MB
+eclipse/ditto-things-search    0.1.0-SNAPSHOT                     068feaa57868        6 days ago          252MB
+eclipse/ditto-things           0.1.0-SNAPSHOT                     e7f74b5da513        6 days ago          249MB
+eclipse/ditto-policies         0.1.0-SNAPSHOT                     f685597d3e43        6 days ago          249MB
+eclipse/ditto-gateway          0.1.0-SNAPSHOT                     68ba55810a28        6 days ago          252MB
+eclipse/ditto-connectivity     0.1.0-SNAPSHOT                     d44ec30ef32d        6 days ago          256MB
+eclipse/ditto-concierge        0.1.0-SNAPSHOT                     c70e69f405d4        6 days ago          250MB
+adoptopenjdk/openjdk8-openj9   jdk8u162-b12_openj9-0.8.0-alpine   5bcd34274ec8        7 days ago          208MB
+mongo                          3.4                                01dea9963770        10 days ago         361MB
+ubuntu                         latest                             452a96d81c30        4 weeks ago         79.6MB
+nginx                          1.13-alpine                        ebe2c7c61055        7 weeks ago         18MB
+tenant                         latest                             e074ca5191e5        9 months ago        1.09GB
+<none>                         <none>                             1b846fca59ee        9 months ago        1.09GB
+<none>                         <none>                             822bb5f5d3d5        9 months ago        1.09GB
+<none>                         <none>                             b9b4ce029d19        9 months ago        1.09GB
+<none>                         <none>                             7882cc70f634        9 months ago        1.09GB
+<none>                         <none>                             15fa90c33f8b        9 months ago        1.09GB
+<none>                         <none>                             2bae42457938        9 months ago        1.09GB
+<none>                         <none>                             9f6cf7b71103        9 months ago        1.09GB
+<none>                         <none>                             77d347dc6da7        9 months ago        1.05GB
+ubuntu                         14.04                              c69811d4e993        9 months ago        188MB
+hello-world                    latest                             1815c82652c0        11 months ago       1.84kB
+swaggerapi/swagger-ui          v2.2.9                             1c73c933f6ca        17 months ago       10.9MB
+➜  docker git:(v1) ✗ sudo docker tag e2129449888f jkong85/ditto-policies:0.1.0
+➜  docker git:(v1) ✗ sudo docker push jkong85/ditto-policies
+
+
+
+sudo docker tag e2129449888f jkong85/ditto-policies:0.1.0
+sudo docker tag 2e547f9fadfa jkong85/ditto-things:0.1.0                           
+sudo docker tag 82ddd5109622 jkong85/ditto-things-search:0.1.0                          
+sudo docker tag 63387a180e61 jkong85/ditto-concierge:0.1.0                          
+sudo docker tag 94cec4378598 jkong85/ditto-connectivity:0.1.0                          
+sudo docker tag 509982ad3e3c jkong85/ditto-gateway:0.1.0                          
+
+sudo docker push jkong85/ditto-policies
+sudo docker push jkong85/ditto-things
+sudo docker push jkong85/ditto-things-search
+sudo docker push jkong85/ditto-concierge
+sudo docker push jkong85/ditto-connectivity
+sudo docker push jkong85/ditto-gateway
+
+
